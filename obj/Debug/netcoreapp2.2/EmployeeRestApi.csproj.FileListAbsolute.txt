@@ -1,0 +1,14 @@
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/bin/Debug/netcoreapp2.2/EmployeeRestApi.deps.json
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/bin/Debug/netcoreapp2.2/EmployeeRestApi.runtimeconfig.json
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/bin/Debug/netcoreapp2.2/EmployeeRestApi.runtimeconfig.dev.json
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/bin/Debug/netcoreapp2.2/EmployeeRestApi.dll
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/bin/Debug/netcoreapp2.2/EmployeeRestApi.pdb
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/obj/Debug/netcoreapp2.2/EmployeeRestApi.csprojAssemblyReference.cache
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/obj/Debug/netcoreapp2.2/EmployeeRestApi.csproj.CoreCompileInputs.cache
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/obj/Debug/netcoreapp2.2/EmployeeRestApi.RazorAssemblyInfo.cache
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/obj/Debug/netcoreapp2.2/EmployeeRestApi.RazorAssemblyInfo.cs
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/obj/Debug/netcoreapp2.2/EmployeeRestApi.AssemblyInfoInputs.cache
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/obj/Debug/netcoreapp2.2/EmployeeRestApi.AssemblyInfo.cs
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/obj/Debug/netcoreapp2.2/EmployeeRestApi.RazorTargetAssemblyInfo.cache
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/obj/Debug/netcoreapp2.2/EmployeeRestApi.dll
+/home/sonat/Documents/DotnetWorkspace/EmployeeRestApi/obj/Debug/netcoreapp2.2/EmployeeRestApi.pdb
