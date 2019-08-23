@@ -21,13 +21,13 @@ namespace EmployeeRestApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<EmployeeItem>>> GetEmployees(){
-            return await _context.EmployeeItems.ToListAsync();
+        public ActionResult<IEnumerable<EmployeeItem>> GetEmployees(){
+            return _context.EmployeeItems.ToList();
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<EmployeeItem>> GetEmployee(long id){
-            var EmployeeItem=await _context.EmployeeItems.FindAsync(id);
+        public ActionResult<EmployeeItem> GetEmployee(long id){
+            var EmployeeItem=_context.EmployeeItems.Find(id);
             if(EmployeeItem==null){
                 return NotFound();
             }
@@ -36,7 +36,7 @@ namespace EmployeeRestApi.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEmployeeItem(long id,EmployeeItem item){
+        public IActionResult PutEmployeeItem(long id,EmployeeItem item){
             EmployeeItem newItem=new EmployeeItem();
 
             newItem.id=item.id;
@@ -46,29 +46,29 @@ namespace EmployeeRestApi.Controllers
             newItem.department=item.department;
 
             _context.Entry(newItem).State=EntityState.Modified;
-            await _context.SaveChangesAsync();
+            _context.SaveChanges();
 
             return NoContent();
         }
 
         [HttpPost]
-        public async Task<ActionResult<EmployeeItem>> PostEmployee(EmployeeItem item){
-             _context.EmployeeItems.Add(item);
-            await _context.SaveChangesAsync();
+        public ActionResult<EmployeeItem> PostEmployee(EmployeeItem item){
+            _context.EmployeeItems.Add(item);
+            _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetEmployee),new {id=item.id},item);
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEmployeeItem(long id){
-            var employeeItem=await _context.EmployeeItems.FindAsync(id);
+        public IActionResult DeleteEmployeeItem(long id){
+            var employeeItem=_context.EmployeeItems.Find(id);
 
             if(employeeItem==null){
                 return NotFound();
             }
 
             _context.EmployeeItems.Remove(employeeItem);
-            await _context.SaveChangesAsync();
+            _context.SaveChanges();
 
             return NoContent();
         }
